@@ -3,7 +3,6 @@ import { galleryItems } from './gallery-items.js';
 
 //Вибираєм елемент списку галереї 
 const mainGalleryUl = document.querySelector('.gallery')
-console.log(mainGalleryUl.classList)
 
 //формуємо структуру галереї 
 const newGalleryStructure = galleryItems.map(({preview, original, description}) => `
