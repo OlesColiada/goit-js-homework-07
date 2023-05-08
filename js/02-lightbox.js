@@ -15,12 +15,5 @@ const newGalleryStructure = galleryItems.map(({preview, original, description}) 
 //Додаємо структуру в існуючий Ул 
 mainGalleryUl.insertAdjacentHTML('afterbegin', newGalleryStructure);
 
-//Ставимо слухач на клік по галереї
-document.addEventListener('click', (e) => {
-    if(e.target.nodeName !== "IMG"){return}
-})
-
-document.addEventListener("DOMContentLoaded", () => {
-    new SimpleLightbox('.gallery a', {captionsData: 'alt', captionDelay: 250, captionPosition: 'bottom',
+new SimpleLightbox('.gallery a', {captionsData: 'alt', captionDelay: 250, captionPosition: 'bottom',
         captionType: 'attr'})
-})
